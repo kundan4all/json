@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/app.js"></script>
+    <script src="JS/value.js"></script>
+    <script src="JS/genderFectory.js"></script>
+    <script src="JS/genderController.js"></script>
+</head>
+
+<body ng-app="gender">
+    <section>
+        <div ng-controller="genderCtrl">
+            <div class="genderPadding">
+                <div class="genderInline " ng-repeat="genderData in genderInfo.genders"> <img ng-src="{{genderData.url}}"> </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
